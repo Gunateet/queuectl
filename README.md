@@ -11,7 +11,7 @@ https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
 ---
 
 ## System Overview & Core Functionality
-Folder Structure
+### Folder Structure
 queuectl/
 ├── queuectl.py            # Main CLI application
 ├── increment_counter.py   # Helper script used for race condition testing
@@ -20,7 +20,7 @@ queuectl/
 ├── design.md              # Architecture overview
 └── requirements.txt       # Python dependencies (e.g., click)
 
-1. Setup Instructions
+### 1. Setup Instructions
 Requirements
 
 Python 3.8 or newer
@@ -98,7 +98,7 @@ rm -f queue.db worker_state.json worker_control.json config.json
 queuectl init
 
 
-2. Usage Examples
+### 2. Usage Examples
 
 Once QueueCTL is set up, you can use it directly from your terminal to enqueue jobs, start workers, monitor status, and manage the Dead Letter Queue.
 
@@ -278,7 +278,7 @@ For convenience, you can also run the prebuilt test script to validate all featu
 bash test_script.sh
 
 
-3. Architecture Overview
+### 3. Architecture Overview
 
 QueueCTL is designed around three key goals: reliability, simplicity, and persistence.
 It provides a minimal background job processing system with retry and failure handling similar to production-grade queue systems.
@@ -419,7 +419,7 @@ Safe – Retries and locking built-in to prevent job loss or duplication.
 
 Extendable – Easy to add priority, scheduling, or metrics later.
 
-4. Assumptions & Trade-offs
+### 4. Assumptions & Trade-offs
 4.1 Design Assumptions
 
 Single machine setup
@@ -465,7 +465,7 @@ Add a lightweight web dashboard or REST API for monitoring.
 
 Introduce metrics (success/failure rates, average processing time).
 
-5. Testing Instructions
+### 5. Testing Instructions
 
 To run all tests automatically:
 
@@ -773,6 +773,6 @@ Expected in first terminal:
 
 
 
- 6. Link for Video Demo
+ ### 6. Link for Video Demo
 
     Link= https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
