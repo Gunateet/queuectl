@@ -10,8 +10,8 @@ https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
 
 ---
 
-## 📁 Folder Structure
-
+## System Overview & Core Functionality
+Folder Structure
 queuectl/
 ├── queuectl.py            # Main CLI application
 ├── increment_counter.py   # Helper script used for race condition testing
