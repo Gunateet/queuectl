@@ -2,6 +2,7 @@ QueueCTL — Background Job Queue CLI
 
 QueueCTL is a command-line tool for managing background jobs with worker processes, retries, and a Dead Letter Queue (DLQ).
 It’s written in Python and uses SQLite for persistence. The goal is to keep it minimal but production-ready — easy to understand, extend, and run anywhere.
+Demo video link with explanation -https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
 
 Folder Structure
 
