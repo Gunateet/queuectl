@@ -1,18 +1,24 @@
-QueueCTL — Background Job Queue CLI
+# QueueCTL — Background Job Queue CLI
 
-QueueCTL is a command-line tool for managing background jobs with worker processes, retries, and a Dead Letter Queue (DLQ).
-It’s written in Python and uses SQLite for persistence. The goal is to keep it minimal but production-ready — easy to understand, extend, and run anywhere.
-Demo video link with explanation -https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
+QueueCTL is a lightweight, production-oriented background job queue system built in Python with SQLite persistence. It supports concurrent worker execution, retry logic with exponential backoff, and a Dead Letter Queue (DLQ) for handling permanently failed jobs.
 
-Folder Structure
+The project is designed to demonstrate reliable job processing, safe concurrency handling, atomic state transitions, and persistence across restarts — while remaining minimal, transparent, and easy to extend.
+
+🎥 Demo Video(with explanation):  
+https://drive.google.com/drive/folders/1SxKEwlfJyyRgxQVk4CGZNZwEs26MmO4O
+
+
+---
+
+## 📁 Folder Structure
 
 queuectl/
-├── queuectl.py                # main CLI application
-├── increment_counter.py       # will use this when testing race condition(included in testing)
-├── test_script.sh             # full testing automation
-├── README.md                  # documentation
-├── design.md                  # architecture overview
-├── requirements.txt           # dependencies (e.g., click)
+├── queuectl.py            # Main CLI application
+├── increment_counter.py   # Helper script used for race condition testing
+├── test_script.sh         # End-to-end testing automation
+├── README.md              # Project documentation
+├── design.md              # Architecture overview
+└── requirements.txt       # Python dependencies (e.g., click)
 
 1. Setup Instructions
 Requirements
